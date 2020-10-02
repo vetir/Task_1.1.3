@@ -28,7 +28,7 @@ public class UserDaoHibernateImpl implements UserDao {
                     ") ENGINE=InnoDB;").executeUpdate();
         transaction.commit();
         session.close();
-        System.out.println("Таблица создана");
+        //System.out.println("Таблица создана");
     }
 
     @Override
@@ -38,7 +38,7 @@ public class UserDaoHibernateImpl implements UserDao {
         session.createSQLQuery("DROP TABLE IF EXISTS users").executeUpdate();
         transaction.commit();
         session.close();
-        System.out.println("Таблица удалена");
+        //System.out.println("Таблица удалена");
     }
 
     @Override
@@ -53,7 +53,7 @@ public class UserDaoHibernateImpl implements UserDao {
                 age +")").executeUpdate();
         transaction.commit();
         session.close();
-        System.out.println("Пользователь добавлен");
+        //System.out.println("Пользователь добавлен");
     }
 
     @Override
@@ -63,7 +63,7 @@ public class UserDaoHibernateImpl implements UserDao {
         session.createSQLQuery("DELETE FROM users WHERE id =" + id).executeUpdate();
         transaction.commit();
         session.close();
-        System.out.println("Пользователь удален");
+        //System.out.println("Пользователь удален");
     }
 
     @Override
@@ -79,8 +79,8 @@ public class UserDaoHibernateImpl implements UserDao {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.createSQLQuery("DELETE FROM users").executeUpdate();
-        System.out.println("Таблица очищена");
         transaction.commit();
         session.close();
+        //System.out.println("Таблица очищена");
     }
 }
