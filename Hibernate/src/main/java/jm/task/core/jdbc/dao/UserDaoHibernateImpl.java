@@ -45,6 +45,11 @@ public class UserDaoHibernateImpl implements UserDao {
     public void saveUser(String name, String lastName, byte age) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
+        session.save(new User(name, lastName, age));
+        transaction.commit();
+        session.close();
+        /*
+        - через createSQLQuery -
         session.createSQLQuery("INSERT INTO users (name, lastName, age) VALUES ('" +
                 name +
                 "', '" +
@@ -52,17 +57,22 @@ public class UserDaoHibernateImpl implements UserDao {
                 "', " +
                 age +")").executeUpdate();
         transaction.commit();
-        session.close();
+        session.close();*/
         //System.out.println("Пользователь добавлен");
+        /*String hql = "insert into User (name, lastName, age) " +
+                "select '" + name + "', '" + lastName + "', " + age + "from User";
+        */
     }
 
     @Override
     public void removeUserById(long id) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.createSQLQuery("DELETE FROM users WHERE id =" + id).executeUpdate();
+        User user = (User) session.load(User.class, id);
+        session.delete(user);
         transaction.commit();
         session.close();
+        //session.createSQLQuery("DELETE FROM users WHERE id =" + id).executeUpdate();
         //System.out.println("Пользователь удален");
     }
 

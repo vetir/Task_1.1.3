@@ -19,8 +19,8 @@ public class Main {
 
         test1.removeUserById(1);
 
-        test1.cleanUsersTable();
+        //test1.cleanUsersTable();
 
-        test1.dropUsersTable();
+        //test1.dropUsersTable();
     }
 }
