@@ -2,21 +2,21 @@ package web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.HttpRequestHandler;
+import org.springframework.web.bind.annotation.*;
 import web.model.Car;
 import web.servise.ServiceCarImp;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
 public class CarController {
-    private static int count;
-    private static List<Car> cars = new ServiceCarImp().listCar(count);
+
+    /* Решение через аннотацию @PathVariable
+
+    private int count;
+    private List<Car> cars = new ServiceCarImp().listCar(count);
 
     @GetMapping("/cars")
     public String carList(ModelMap model) {
@@ -33,5 +33,18 @@ public class CarController {
 
         return "cars";
     }
+    */
 
+    @GetMapping("/cars")
+    public String carList(@RequestParam(value = "count", defaultValue = "5") Integer count, ModelMap model) {
+        model.addAttribute("cars", new ServiceCarImp().listCar(count));
+        return "cars";
+    }
+
+//    @GetMapping("/cars")
+//    public String carList(HttpServletRequest request, ModelMap model) {
+//        String name = request.getParameter("count");
+//        model.addAttribute("cars", new ServiceCarImp().listCar(Integer.parseInt(name)));
+//        return "cars";
+//    }
 }
