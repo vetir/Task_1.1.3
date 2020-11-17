@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Users</title>
+</head>
+
+<body>
+<h1 th:text="Users"></h1>
+<br/><br/>
+<div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Surname</th>
+        </tr>
+        <tr th:each ="user : ${users}">
+            <td th:utext="${user.id}">...</td>
+            <td th:utext="${user.firsName}">...</td>
+            <td th:utext="${user.lastName}">...</td>
+            <td>
+                <a th:href="@{/update/{id}(id=${user.id})}">update</a>
+            </td>
+            <td>
+                <form th:action="@{/delete(id=${user.id})}" th:object="${user}">
+                    <input type="hidden" name="id" th:value="${user.id}">
+                    <input type="submit" value="Delete">
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<h2>Add</h2>
+<th:url value="/add/" var="add"/>
+<a th:href="@{add}">Add new User</a>
+
+</body>
+</html>
+
+
+
+<!--<meta charset="UTF-8" />-->
+<!--<title th:utext="#{label.title}"></title>-->
+<!--</head>-->
+
+<!--<body>-->
+<!--<a href="/index">Go to index</a>-->
+
+<!--<h1 th:utext="#{label.title}"></h1>-->
+<!--<br/><br/>-->
+<!--<div>-->
+<!--    <table border="1">-->
+<!--        <tr>-->
+<!--            <th>Model</th>-->
+<!--            <th>Number</th>-->
+<!--            <th>Weight</th>-->
+<!--        </tr>-->
+<!--        <tr th:each ="car : ${cars}">-->
+<!--            <td th:utext="${car.model}">...</td>-->
+<!--            <td th:utext="${car.number}">...</td>-->
+<!--            <td th:utext="${car.weight}">...</td>-->
+<!--        </tr>-->
+<!--    </table>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
