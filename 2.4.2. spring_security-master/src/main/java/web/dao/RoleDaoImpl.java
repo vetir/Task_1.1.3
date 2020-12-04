@@ -13,21 +13,21 @@ import java.util.Set;
 @Repository
 public class RoleDaoImpl implements RoleDao {
 
-    @PersistenceContext
-    private EntityManager entityManager;
+//    @PersistenceContext
+//    private EntityManager entityManager;
 
-    @Transactional
-    @Override
-    public void newRole(Set<Role> roles) {
-        roles.forEach(role -> entityManager.persist(role));
-    }
-
-    @Transactional
-    @Override
-    public Set<Role> getRole() {
-        Set<Role> setrole = new HashSet<>();
-        List<Role> listrole = entityManager.createQuery("select role from Role role").getResultList();
-        setrole.addAll(listrole);
-        return setrole;
-    }
+//    @Transactional
+//    @Override
+//    public void newRole(Set<Role> roles) {
+//        roles.forEach(role -> entityManager.persist(role));
+//    }
+//
+//    @Transactional
+//    @Override
+//    public Set<Role> getRole() {
+//        Set<Role> setrole = new HashSet<>();
+//        List<Role> listrole = entityManager.createQuery("select role from Role role").getResultList();
+//        setrole.addAll(listrole);
+//        return setrole;
+//    }
 }
