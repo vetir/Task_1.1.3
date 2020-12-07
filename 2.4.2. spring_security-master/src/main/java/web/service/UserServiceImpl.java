@@ -33,44 +33,43 @@ public class UserServiceImpl implements UserService {
 //        userDao.create(admin);
 //    }
 
-//    @Override
-//    public void create(User user) {
-//        userDao.create(user);
-//    }
-//
-//    @Override
-//    public User getUser(Long id) {
-//        return userDao.getUser(id);
-//    }
-//
-//    @Override
-//    public List<User> getAllUsers() {
-//        return userDao.getAllUsers();
-//    }
-//
-//    @Override
-//    public void update(User user) {
-//        userDao.update(user);
-//    }
-//
-//    @Override
-//    public void remove(Long id) {
-//        userDao.remove(id);
-//    }
-//
-//    @Override
-//    public User getUserByName(String name) {
-//        return userDao.getUserByName(name);
-//    }
-//
-//    @Override
-//    public void newRole(Set<Role> roles) {
-//        roleDao.newRole(roles);
-//    }
-//
-//    @Override
-//    public Set<Role> getRole() {
-//        return roleDao.getRole();
-//    }
+    @Override
+    public void create(User user) {
+        userDao.create(user);
+    }
 
+    @Override
+    public User getUser(Long id) {
+        return userDao.getUser(id);
+    }
+
+    @Override
+    public List<User> getAllUsers() {
+        return userDao.getAllUsers();
+    }
+
+    @Override
+    public void update(User user) {
+        userDao.update(user);
+    }
+
+    @Override
+    public void remove(Long id) {
+        userDao.remove(id);
+    }
+
+    @Override
+    public User getUserByName(String name) {
+        return userDao.getUserByName(name);
+    }
+
+    @Override
+    public void newRole(Set<Role> roles) {
+        roleDao.newRole(roles);
+    }
+
+    @Override
+    public Set<Role> getRole() {
+        return roleDao.getRole();
+    }
 }

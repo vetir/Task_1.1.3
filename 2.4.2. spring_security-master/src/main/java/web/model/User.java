@@ -17,11 +17,11 @@ public class User implements UserDetails, Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name")
-    private String name;
-
     @Column(name = "email")
     private String email;
+
+    @Column(name = "name")
+    private String name;
 
     @Column(name = "password")
     private String password;
@@ -35,11 +35,19 @@ public class User implements UserDetails, Serializable {
     public User() {
     }
 
-    public User(String name, String email, String password, Set<Role> roles) {
-        this.name = name;
+    public User(String email, String name, String password, Set<Role> roles) {
         this.email = email;
+        this.name = name;
         this.password = password;
         this.roles = roles;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -107,9 +115,9 @@ public class User implements UserDetails, Serializable {
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
+                "email='" + email + '\'' +
+                ", name='" + name + '\'' +
+//                ", password='" + password + '\'' +
                 '}';
     }
 }
