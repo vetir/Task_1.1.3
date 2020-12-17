@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-@Repository("roleDao")
+@Repository
 public class RoleDaoImp implements RoleDao{
 
     EntityManager entityManager;

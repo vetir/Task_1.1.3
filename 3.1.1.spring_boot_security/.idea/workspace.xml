@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebbd8851-56d2-4af6-afd6-0edd7f9049cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3.1.1 spring_boot_security Maven Webapp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/MyFirstApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/service/UserServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/updateUser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/users.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/service/UserDetailsServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2.2.1. spring_hibernate/2.2.1. spring_hibernate/spring-hibernate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../2.2.1. spring_hibernate/2.2.1. spring_hibernate/spring-hibernate.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2.2.1. spring_hibernate/2.2.1. spring_hibernate/src/main/java/hiber/dao/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2.2.1. spring_hibernate/2.2.1. spring_hibernate/src/main/java/hiber/dao/UserDaoImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2.2.1. spring_hibernate/2.2.1. spring_hibernate/target/classes/hiber/dao/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../2.2.1. spring_hibernate/2.2.1. spring_hibernate/target/classes/hiber/dao/UserDaoImp.class" afterDir="false" />
@@ -61,6 +53,40 @@
       <change beforePath="$PROJECT_DIR$/../2.4.2. spring_security-master/target/classes/web/service/UserDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../2.4.2. spring_security-master/target/classes/web/service/UserDetailsServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2.4.2. spring_security-master/target/classes/web/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../2.4.2. spring_security-master/target/classes/web/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2.4.2. spring_security-master/target/classes/web/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../2.4.2. spring_security-master/target/classes/web/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/3.1.1 spring_boot_security Maven Webapp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/src/main/java.web/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/src/main/java.web/controller/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/src/main/java.web/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/src/main/java.web/dao/RoleDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/src/main/java.web/dao/RoleDaoImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/src/main/java.web/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/src/main/java.web/dao/UserDaoImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/src/main/java.web/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/src/main/java.web/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/src/main/java.web/security/LoginSuccessHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/src/main/java.web/security/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/src/main/java.web/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/src/main/java.web/service/UserServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.1.1 spring_boot_security/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/dao/RoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/dao/RoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/dao/RoleDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/dao/RoleDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/dao/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/dao/UserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/service/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/service/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/service/UserServiceImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CoreTaskTemplate/target/classes/jm/task/core/jdbc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreTaskTemplate/target/classes/jm/task/core/jdbc/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CoreTaskTemplate/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreTaskTemplate/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CoreTaskTemplate/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreTaskTemplate/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" afterDir="false" />
@@ -90,8 +116,8 @@
       <list>
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -168,19 +194,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationMy" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="3.1.1.spring_boot_security" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="web.ApplicationMy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyFirstApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="3.1.1.spring_boot_security" />
       <extension name="coverage">
@@ -192,20 +205,6 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="web.MyFirstApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MySpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="3.1.1.spring_boot_security" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="MySpringBootApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringBootApplications" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="3.1.1.spring_boot_security" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="SpringBootApplications" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -298,17 +297,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.MySpringBootApplication" />
-      <item itemvalue="Spring Boot.ApplicationMy" />
       <item itemvalue="Spring Boot.MyFirstApplication" />
-      <item itemvalue="Spring Boot.SpringBootApplications" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.39" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.MyFirstApplication" />
-        <item itemvalue="Spring Boot.ApplicationMy" />
-        <item itemvalue="Spring Boot.SpringBootApplications" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +329,7 @@
       <workItem from="1608115939973" duration="5529000" />
       <workItem from="1608126558484" duration="10383000" />
       <workItem from="1608186333014" duration="7854000" />
-      <workItem from="1608206514652" duration="6033000" />
+      <workItem from="1608206514652" duration="8560000" />
     </task>
     <servers />
   </component>
